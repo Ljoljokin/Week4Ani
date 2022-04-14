@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Marck+Script&display=swap');
+
+body {
+  background-color: rgb(175, 248, 248); 
+}
+
+.heading {
+ text-align: center;
+}
+
+.playground-heading {
+ color: palevioletred;
+ font-family: 'Marck Script', cursive;
+ font-size: 5rem;
+ position: relative; /*top-right-bottom-left*/
+ animation: heading;
+ animation-duration: 3s;
+}
+
+@keyframes heading {
+  0% {top: -250px}
+  100% {top: 0}
+}
+
+.main {
+border: 3px solid grey;
+width: 55%;
+margin: 1rem auto
+}
+
+.main div {
+ height: 200px;
+ width: 200px;
+ border: 1px solid black;
+ border-radius: 50%;
+ margin: 2rem auto;
+}
+
+#red{
+border-color: red;
+position: relative; /*top-right-bottom-left*/
+animation: red;
+animation-duration: 5s;
+}
+
+@keyframes red {
+ 0% {left: -700px}
+ 100% {left: 0}
+}
+
+#green{
+border-color: green;
+animation: aniGreen;
+animation-duration: 5s;
+}  
+
+@keyframes aniGreen {
+  0% {opacity: 0;} /*0 - 1*/
+  100% {opacity: 1;}
+}
+#blue{
+border-color: blue;
+position: relative; /*top-right-bottom-left*/
+animation: blue;
+animation-duration: 5s;
+}
+
+@keyframes blue {
+ 0% {right: -700px}
+ 100% {right: 0}
+}  
+
+.foother {
+color: blueviolet;
+font-family: 'Alex Brush', cursive;
+font-size: 2rem;
+text-align: center;
+}
